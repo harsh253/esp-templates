@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tasks</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/project-tasks.css">
+    </head>
+
+    <body>
+        <!--Sidebar-->
+        <div class="sidebar collapse-sidebar">
+            <div class="bar-icon">
+                <div class="bar-1-active bar-1"></div>
+                <div class="bar-2-active bar-2"></div>
+                <div class="bar-3-active bar-3"></div>
+            </div>
+            <img class="logo adjust-size" src="assets/images/Logo-1.png">
+            <ul class="list-unstyled">
+                <li><img src="assets/images/Dashboard icon.svg"><span style="display:none">Dashboard</span></li>
+                <a href="home.html"><li style="top:58px"><img src="assets/images/Home icon.svg"><span style="display:none">Home</span></li></a>
+                <a href="project-list.html"><li style="top:117px" class="active"><img src="assets/images/Projects icon.svg"><span style="display:none">Projects</span></li></a>
+                <a href="#"><li style="top:175px"><img src="assets/images/Attendance icon.svg"><span style="display:none">Attendance</span></li></a>
+                <a href="#"><li style="top:234px"><img src="assets/images/Salary Icon.svg"><span style="display:none">Salary</span></li></a>
+                <a href="#"><li style="top:293px"><img src="assets/images/Leave Req.. Icon.svg"><span style="display:none">Leave Request</span></li></a>
+            </ul>
+        </div>
+        <!--Sidebar-->
+
+        <div class="main expand-main">
+        
+            <!--pop-up-->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Finish</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure you want to finish this task?</p>
+                            <button type="submit" class="btn yes">Yes</button>
+                            <button type="submit" class="btn no">No</button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--pop-up-->
+
+            <!--Navigation-->
+                <nav class="navbar navbar-expand-lg ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        
+                        <ul class="navbar-nav ml-auto right-header">
+                            <form class="search">
+                                <input type="search" placeholder="Search" class="form-control search-bar-nav ">
+                            </form>
+                            <li class="nav-item nav-icon">
+                                <a class="nav-link" href="#"><img src="assets/images/Message.svg"></a>
+                            </li>
+                            <li class="nav-item nav-icon">
+                                <a class="nav-link" href="#"><img src="assets/images/Notification.png"></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="assets/images/line.svg" class="dropdown-line">
+                                <div class="profile-bg">
+                                    <img src="assets/images/profile.png">
+                                </div>
+                                <img src="assets/images/dropdown-icon.svg" class="dropdown-icon">
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="profile.html"><img id="my-img" src="assets/images/profile.png"> My Profile</a>
+                                <a class="dropdown-item" href="edit-profile.html"><img id="edit-profile" src="assets/images/Settings.svg"><span>Edit Profile</span></a>                              
+                                <a class="dropdown-item" href="#"><i class="fas fa-power-off"></i><span>Logout</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            <!--Navigation-->
+
+            <!-- <div class="main-content"> -->
+                <div class="tasks-container">
+                    <h5>My Tasks</h5>
+                    <input class="search-bar" placeholder="Search Tasks">
+                    <ul class="list-unstyled">
+                        <li class="task-list">
+                            <h4>Mentyor</h4>
+                            <p>Mentyor-Design-Footer</p>
+                        </li>
+                        <li class="task-list">
+                            <h4>Mentyor</h4>
+                            <p>Mentyor-Design-Footer</p>
+                        </li>
+                        <li class="task-list">
+                            <h4>Mentyor</h4>
+                            <p>Mentyor-Design-Footer</p>
+                        </li>
+                        <li class="task-list">
+                            <h4>Mentyor</h4>
+                            <p>Mentyor-Design-Footer</p>
+                        </li>
+                        <li class="task-list">
+                            <h4>Mentyor</h4>
+                            <p>Mentyor-Design-Footer</p>
+                        </li>
+                        <li class="task-list">
+                            <h4>Mentyor</h4>
+                            <p>Mentyor-Design-Footer</p>
+                        </li>
+                        <li class="task-list">
+                            <h4>Mentyor</h4>
+                            <p>Mentyor-Design-Footer</p>
+                        </li>
+                        <li class="task-list">
+                            <h4>Mentyor</h4>
+                            <p>Mentyor-Design-Footer</p>
+                        </li>
+                        <li class="task-list">
+                            <h4>Mentyor</h4>
+                            <p>Mentyor-Design-Footer</p>
+                        </li>
+                        <li class="task-list">
+                            <h4>Mentyor</h4>
+                            <p>Mentyor-Design-Footer</p>
+                        </li>
+                        <li class="task-list">
+                            <h4>Mentyor</h4>
+                            <p>Mentyor-Design-Footer</p>
+                        </li>
+                        <li class="task-list">
+                            <h4>Mentyor</h4>
+                            <p>Mentyor-Design-Footer</p>
+                        </li>
+                        <li class="task-list">
+                            <h4>Mentyor</h4>
+                            <p>Mentyor-Design-Last</p>
+                        </li>
+                        <li class="task-list">
+                            <h4>Mentyor</h4>
+                            <p>Mentyor-Design-Header</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="main-info">
+                    <div class="task-info-container">
+                        <h4>Mentyor-Design-Footer</h4>
+                        <span>
+                            <p style="display:inline-block;">Team Members</p>
+                            <div class="profile-bg">
+                                <img src="assets/images/profile.png">
+                            </div>
+                            <div class="profile-bg">
+                                <img src="assets/images/sample-image-3.svg">
+                            </div>
+                            <div class="profile-bg">
+                                <img src="assets/images/sample-image-2.svg">
+                            </div>
+                        </span>
+                        <div class="task-details">
+                            <div class="row">
+                                <div class="col-lg-3 information">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <h6 class="label">Task:</h6>
+                                            <h6>Task Name</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-3 information">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <h6 class="label">Status:</h6>
+                                            <h6>Closed</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-3 information">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <h6 class="label">Start Date:</h6>
+                                            <h6>05-July-2018</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-3 information">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <h6 class="label">End Date:</h6>
+                                            <h6>12-July-2018</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-3 information">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <h6 class="label">Expected Time:</h6>
+                                            <h6>08 hrs</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-3 information">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <h6 class="label">Time Taken:</h6>
+                                            <h6>07 hrs 47 min</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row description">
+                                <h3>Description</h3>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                            </div>
+
+                            <div class="start-btn">
+                                <button type="submit" class="btn start">Start Task</button>
+                            </div>
+                            <div class="pause-btn">
+                                <button type="submit" class="btn pause">Pause</button>
+                            </div>
+                            <div class="resume-btn">
+                                <button type="submit" class="btn resume">Resume</button>
+                            </div>
+                            <div class="stop-btn">
+                                <button type="submit" data-toggle="modal" data-target="#exampleModalCenter" class="btn stop">Stop</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+
+            <!--footer-->
+            <div class="footer">
+                <div class="row">
+                    <div class="footer-elements">
+                        <ul class="list-unstyled">
+                            <li>Terms of Use</li>
+                            <li>|</li>
+                            <li>Privacy Policy</li>
+                            <li>Code Flow Tech &copy 2018</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--footer-->
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="assets/js/project-tasks.js"></script>
+    </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/salary.css">
+    </head>
+
+    <body>
+        <!--Sidebar-->
+        <div class="sidebar">
+            <div class="bar-icon">
+                <div class="bar-1-active"></div>
+                <div class="bar-2-active"></div>
+                <div class="bar-3-active"></div>
+            </div>
+            <img class="logo" src="assets/images/Logo-1.png">
+            <ul class="list-unstyled">
+                <li><img src="assets/images/Dashboard icon.svg"><span>Dashboard</span></li>
+                <a href="home.html"><li style="top:58px" ><img src="assets/images/Home icon.svg"><span>Home</span></li></a>
+                <a href="project-list.html"><li style="top:117px"><img src="assets/images/Projects icon.svg"><span>Projects</span></li></a>
+                <a href="#"><li style="top:175px"><img src="assets/images/Attendance icon.svg"><span>Attendance</span></li></a>
+                <a href="salary.html"><li style="top:234px" class="active"><img src="assets/images/Salary Icon.svg"><span>Salary</span></li></a>
+                <a href="leave-request.html"><li style="top:293px"><img src="assets/images/Leave Req.. Icon.svg"><span>Leave Request</span></li></a>
+            </ul>
+        </div>
+        <!--Sidebar-->
+
+        <div class="main">
+            <!--Navigation-->
+            <nav class="navbar navbar-expand-lg bg-white ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto right-header">
+                        <form class="search">
+                            <input type="search" placeholder="Search" class="form-control search-bar">
+                        </form>
+                        <li class="nav-item nav-icon">
+                            <a class="nav-link" href="#"><img src="assets/images/Message.svg"></a>
+                        </li>
+                        <li class="nav-item nav-icon">
+                            <a class="nav-link" href="#"><img src="assets/images/Notification.png"></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/images/line.svg" class="dropdown-line">
+                              <div class="profile-bg">
+                                <img src="assets/images/profile.png">
+                              </div>
+                              <img src="assets/images/dropdown-icon.svg" class="dropdown-icon">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="profile.html"><img id="my-img" src="assets/images/profile.png"> My Profile</a>
+                              <a class="dropdown-item" href="edit-profile.html"><img id="edit-profile" src="assets/images/Settings.svg"><span>Edit Profile</span></a>                              
+                              <a class="dropdown-item" href="#"><i class="fas fa-power-off"></i><span>Logout</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--Navigation-->
+
+            <div class="main-content ">
+                <div class="row head">
+                    <h4>Projects</h4>
+                    <div class="col-md-12 year-selection columns">
+                        <label for="year">Year</label>
+                        <select id="year" class="form-control">
+                            <option value="#" class="default">Select Year</option>
+                            <option value="#">2018</option>
+                            <option value="#">2017</option>
+                            <option value="#">2016</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5><a href="salary-breakup.html">Click Here To Display CTC Breakdown</a></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row top-form-container">
+                    <div class="col-md-4 columns">
+                        <label for="year">Year</label>
+                        <select id="year" class="form-control">
+                            <option value="#" class="default">Select Year</option>
+                            <option value="#">2018</option>
+                            <option value="#">2017</option>
+                            <option value="#">2016</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 columns">
+                        <label for="month">Month</label>
+                        <select id="month" class="form-control">
+                            <option value="#" class="default">Select Month</option>
+                            <option value="#">January</option>
+                            <option value="#">February</option>
+                            <option value="#">March</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 columns download-btn-container">
+                        <label class="download">Download</label>
+                        <button type="submit" class="download-btn">Download Salary Slip (PDF)</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p class="display-text">You can download your salary slip from here anytime.</p>
+                </div>
+
+                <div class="row">
+                    <p class="months">Months</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 columns">
+                        <button type="submit" class=" month">March 2018</button>
+                    </div>
+                    <div class="col-md-4 columns download-btn-bottom-container">
+                        <!-- <label class="download">Download</label> -->
+                        <button type="submit" class="download-btn-bottom download-btn">Download Salary Slip (PDF)</button>                        
+                    </div>
+                    <div class="col-md-8 columns">
+                        <button type="submit" class=" month">March 2018</button>
+                    </div>
+                    <div class="col-md-4 columns download-btn-bottom-container">
+                        <!-- <label class="download">Download</label> -->
+                        <button type="submit" class="download-btn-bottom download-btn">Download Salary Slip (PDF)</button>                        
+                    </div>
+                    <div class="col-md-8 columns">
+                        <button type="submit" class=" month">March 2018</button>
+                    </div>
+                    <div class="col-md-4 columns download-btn-bottom-container">
+                        <!-- <label class="download">Download</label> -->
+                        <button type="submit" class="download-btn-bottom download-btn">Download Salary Slip (PDF)</button>                        
+                    </div>
+                    <div class="col-md-8 columns">
+                        <button type="submit" class=" month">March 2018</button>
+                    </div>
+                    <div class="col-md-4 columns download-btn-bottom-container">
+                        <!-- <label class="download">Download</label> -->
+                        <button type="submit" class="download-btn-bottom download-btn">Download Salary Slip (PDF)</button>                        
+                    </div>
+                    <div class="col-md-8 columns">
+                        <button type="submit" class=" month">March 2018</button>
+                    </div>
+                    <div class="col-md-4 columns download-btn-bottom-container">
+                        <!-- <label class="download">Download</label> -->
+                        <button type="submit" class="download-btn-bottom download-btn">Download Salary Slip (PDF)</button>                        
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="row">
+                <div class="footer-elements">
+                    <ul class="list-unstyled">
+                        <li>Terms of Use</li>
+                        <li>|</li>
+                        <li>Privacy Policy</li>
+                        <li>Code Flow Tech &copy 2018</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="assets/js/salary.js"></script>
+    </body>
+</html>

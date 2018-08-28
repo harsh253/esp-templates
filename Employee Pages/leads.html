@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leads</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css" rel="stylesheet" type="text/css" /> -->
+        
+        <link rel="stylesheet" href="assets/css/leads.css">
+    </head>
+
+    <body>
+        <!--Sidebar-->
+        <div class="sidebar">
+            <div class="bar-icon">
+                <div class="bar-1-active"></div>
+                <div class="bar-2-active"></div>
+                <div class="bar-3-active"></div>
+            </div>
+            <img class="logo" src="assets/images/Logo-1.png">
+            <ul class="list-unstyled">
+                <li><img src="assets/images/Dashboard icon.svg"><span>Dashboard</span></li>
+                <a href="home.html"><li style="top:58px" ><img src="assets/images/Home icon.svg"><span>Home</span></li></a>
+                <a href="leads.html"><li style="top:117px" class="active"><img src="assets/images/Projects icon.svg"><span>Leads</span></li></a>
+                <a href="#"><li style="top:175px"><img src="assets/images/Attendance icon.svg"><span>Attendance</span></li></a>
+                <a href="#"><li style="top:234px"><img src="assets/images/Salary Icon.svg"><span>Salary</span></li></a>
+                <a href="leave-request.html"><li style="top:293px" ><img src="assets/images/Leave Req.. Icon.svg"><span>Leave Request</span></li></a>
+            </ul>
+        </div>
+        <!--Sidebar-->
+
+
+        <div class="main">
+            <!--Navigation-->
+            <nav class="navbar navbar-expand-lg bg-white ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto right-header">
+                        <form class="search">
+                            <input type="search" placeholder="Search" class="form-control search-bar">
+                        </form>
+                        <li class="nav-item nav-icon">
+                            <a class="nav-link" href="#"><img src="assets/images/Message.svg"></a>
+                        </li>
+                        <li class="nav-item nav-icon">
+                            <a class="nav-link" href="#"><img src="assets/images/Notification.png"></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/images/line.svg" class="dropdown-line">
+                              <div class="profile-bg">
+                                <img src="assets/images/profile.png">
+                              </div>
+                              <img src="assets/images/dropdown-icon.svg" class="dropdown-icon">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="profile.html"><img id="my-img" src="assets/images/profile.png"> My Profile</a>
+                              <a class="dropdown-item" href="edit-profile.html"><img id="edit-profile" src="assets/images/Settings.svg"><span>Edit Profile</span></a>                              
+                              <a class="dropdown-item" href="#"><i class="fas fa-power-off"></i><span>Logout</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--Navigation-->
+
+            <div class="main-content ">
+            <!--pop-up-->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Edit Status</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                        Dropdown button
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">In-Touch</a>
+                                        <a class="dropdown-item" href="#">Dismissed</a>
+                                        <a class="dropdown-item" href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--pop-up-->
+
+                <div class="row head">
+                    <h4>Leads</h4>
+                </div>
+
+                <div class="row">
+                    <ul class="list-unstyled leads-btn-container">
+                        <li><button type="button" class="new-leads-btn leads-btn-active">New Leads</button></li>
+                        <li><button type="button" class="assigned-leads-btn">Assigned Leads</button></li>
+                        <li><button type="button" class="closed-leads-btn">Closed Leads</button></li>
+                        <li><button type="button" class="declined-leads-btn">Declined Leads</button></li>
+                    </ul>
+                </div>
+
+                <div class="row ">
+                    <div class="table-responsive major-container">
+                        <div class=" bg-white">
+                            <div class="row">
+                                <span>
+                                    <div class="row">
+                                        <div class="main-info">
+                                            <div class="row">
+                                                <h5 class="heading">New Leads</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>                                   
+                            </div>
+                        </div>
+
+                        <div class="table-container">
+                            <div class="table-responsive project-details">
+                                <table class="table table-lg text-center table-borderless">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">COMPANY NAME</th>
+                                        <th scope="col">CONTACT NUMBER</th>
+                                        <th scope="col">EMAIL</th>
+                                        <th scope="col">ADDRESS</th>
+                                        <th scope="col">STATUS</th>
+                                        <th scope="col">ACTION</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>Tata Groups Pvt Ltd.</td>
+                                        <td>+91-98882 52452</td>
+                                        <td>tatagroup@gmail.com</td>
+                                        <td>Sec-09, B-82, Noida</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="status">In-Touch</a></td>
+                                        <td><a href="project-tasks.html"><img src="assets/images/View.svg"></a></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Tata Groups Pvt Ltd.</td>
+                                        <td>+91-98882 52452</td>
+                                        <td>tatagroup@gmail.com</td>
+                                        <td>Sec-09, B-82, Noida</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="status">Dismissed</a></td>
+                                        <td><a href="project-tasks.html"><img src="assets/images/View.svg"></a></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Tata Groups Pvt Ltd.</td>
+                                        <td>+91-98882 52452</td>
+                                        <td>tatagroup@gmail.com</td>
+                                        <td>Sec-09, B-82, Noida</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="status">In-Touch</a></td>
+                                        <td><a href="project-tasks.html"><img src="assets/images/View.svg"></a></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Tata Groups Pvt Ltd.</td>
+                                        <td>+91-98882 52452</td>
+                                        <td>tatagroup@gmail.com</td>
+                                        <td>Sec-09, B-82, Noida</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="status">In-Touch</a></td>
+                                        <td><a href="project-tasks.html"><img src="assets/images/View.svg"></a></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Tata Groups Pvt Ltd.</td>
+                                        <td>+91-98882 52452</td>
+                                        <td>tatagroup@gmail.com</td>
+                                        <td>Sec-09, B-82, Noida</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="status">In-Touch</a></td>
+                                        <td><a href="project-tasks.html"><img src="assets/images/View.svg"></a></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Tata Groups Pvt Ltd.</td>
+                                        <td>+91-98882 52452</td>
+                                        <td>tatagroup@gmail.com</td>
+                                        <td>Sec-09, B-82, Noida</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="status">In-Touch</a></td>
+                                        <td><a href="project-tasks.html"><img src="assets/images/View.svg"></a></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Tata Groups Pvt Ltd.</td>
+                                        <td>+91-98882 52452</td>
+                                        <td>tatagroup@gmail.com</td>
+                                        <td>Sec-09, B-82, Noida</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="status">In-Touch</a></td>
+                                        <td><a href="project-tasks.html"><img src="assets/images/View.svg"></a></td>
+                                        </tr>   
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row major-pagination-container">
+                            <div class="pagination-container">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        </li>
+                                        <li class="page-item active-link"><a class="page-link " href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Page-content-->
+
+            
+            <div class="footer">
+                <div class="row">
+                <div class="footer-elements">
+                    <ul class="list-unstyled">
+                        <li>Terms of Use</li>
+                        <li>|</li>
+                        <li>Privacy Policy</li>
+                        <li>Code Flow Tech &copy 2018</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js" type="text/javascript"></script> -->
+        <script src="assets/js/leads.js"></script>
+    </body>
+</html>
